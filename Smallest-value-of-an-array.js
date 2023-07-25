@@ -16,3 +16,9 @@ function min(arr, toReturn) {
 }
 
 // or
+
+function min(arr, toReturn) {
+  return arr.reduce(function(o, v, i) {
+    return (v < o.value) ? (o.value = v, o.index = i, o) : o;
+  }, {value: Infinity, index: 0})[toReturn];
+}
