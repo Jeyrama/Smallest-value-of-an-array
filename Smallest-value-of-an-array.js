@@ -9,3 +9,8 @@ min([1,2,3,4,5], 'index') // => 0
 
 
 // Solution
+
+function min(arr, toReturn) {
+  let val = Math.min.apply(null, arr)
+  return toReturn == 'value' ? val : arr.indexOf(val)
+}
