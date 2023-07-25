@@ -14,3 +14,5 @@ function min(arr, toReturn) {
   let val = Math.min.apply(null, arr)
   return toReturn == 'value' ? val : arr.indexOf(val)
 }
+
+// or
